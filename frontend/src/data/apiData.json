@@ -1,0 +1,7 @@
+{
+  "internal": ["/api/v1/orders/create", "/api/v1/orders/create"],
+  "external": ["/api/v1/inventory/create", "/api/v1/inventory/reserve", "/api/v1/inventory/reserve", "/api/v1/inventory/aois"],
+  "sourceCallLocation": "OrderDatabaseHandler.saveOrder",
+  "requestPayload": { "fields": "string", "status": "string", "createdAt": "string" },
+  "responsePayload": { "fields": "string", "reserve": "string" }
+}

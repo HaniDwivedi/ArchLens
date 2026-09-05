@@ -1,0 +1,32 @@
+{
+  "tableList": ["Orders", "OrderItems", "Inventory", "Users", "Database", "Design", "Comments"],
+  "tables": {
+    "Orders": { "columns": [
+      { "name": "id", "type": "int", "nullable": false, "primaryKey": true },
+      { "name": "customerId", "type": "int", "nullable": false, "indexes": "FK Users.id" },
+      { "name": "status", "type": "varchar(32)", "nullable": false },
+      { "name": "createdAt", "type": "timestamp", "nullable": false }
+    ] },
+    "OrderItems": { "columns": [
+      { "name": "id", "type": "int", "nullable": false, "primaryKey": true },
+      { "name": "orderId", "type": "int", "nullable": false, "indexes": "FK Orders.id" },
+      { "name": "productId", "type": "int", "nullable": false },
+      { "name": "quantity", "type": "int", "nullable": false },
+      { "name": "price", "type": "decimal(10,2)", "nullable": false }
+    ] },
+    "Inventory": { "columns": [
+      { "name": "id", "type": "int", "nullable": false, "primaryKey": true },
+      { "name": "productId", "type": "int", "nullable": false, "indexes": "unique" },
+      { "name": "quantity", "type": "int", "nullable": false }
+    ] },
+    "Users": { "columns": [
+      { "name": "id", "type": "int", "nullable": false, "primaryKey": true },
+      { "name": "email", "type": "varchar(255)", "nullable": false, "indexes": "unique" }
+    ] },
+    "Database": { "columns": [] }, "Design": { "columns": [] }, "Comments": { "columns": [] }
+  },
+  "relationships": [
+    { "from": "Orders.customerId", "to": "Users.id", "label": "belongs to" },
+    { "from": "OrderItems.orderId", "to": "Orders.id", "label": "contains" }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "name": "archlens",
+  "displayName": "Archlens",
+  "description": "Visualize the structure of any opened VS Code workspace.",
+  "version": "0.1.6",
+  "publisher": "archlens",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HaniDwivedi/ArchLens.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HaniDwivedi/ArchLens/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Visualization"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "onCommand:archlens.visualizeWorkspace",
+    "onCommand:archlens.refreshWorkspace",
+    "onCommand:archlens.openBrowser"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "archlens.visualizeWorkspace",
+        "title": "Archlens: View Architecture"
+      },
+      {
+        "command": "archlens.refreshWorkspace",
+        "title": "Archlens: Refresh Workspace Graph"
+      },
+      {
+        "command": "archlens.openBrowser",
+        "title": "Archlens: Open in Browser"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "archlens.visualizeWorkspace"
+        },
+        {
+          "command": "archlens.refreshWorkspace"
+        },
+        {
+          "command": "archlens.openBrowser"
+        }
+      ],
+      "editor/title": [
+        {
+          "command": "archlens.visualizeWorkspace",
+          "group": "navigation@1",
+          "when": "resourceLangId"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Archlens",
+      "properties": {
+        "archlens.browserPort": {
+          "type": "number",
+          "default": 4321,
+          "minimum": 1024,
+          "maximum": 65535,
+          "description": "Local port used by Archlens when opening the graph in a browser."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "build:webview": "npm --prefix ../frontend run build",
+    "package": "vsce package"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.24.0"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.26.1"
+  }
+}

@@ -1,0 +1,363 @@
+{
+  "rootDir": "c:\\Users\\hanidwivedi\\OneDrive\\Desktop\\Archlens",
+  "nodes": [
+    {
+      "id": "backend/server.js",
+      "path": "backend/server.js",
+      "language": "javascript"
+    },
+    {
+      "id": "extension/codeParser.js",
+      "path": "extension/codeParser.js",
+      "language": "javascript"
+    },
+    {
+      "id": "extension/extension.js",
+      "path": "extension/extension.js",
+      "language": "javascript"
+    },
+    {
+      "id": "extension/webview/assets/index-kS-cuMTW.js",
+      "path": "extension/webview/assets/index-kS-cuMTW.js",
+      "language": "javascript"
+    },
+    {
+      "id": "frontend/src/components/ClassNode.jsx",
+      "path": "frontend/src/components/ClassNode.jsx",
+      "language": "javascript"
+    },
+    {
+      "id": "frontend/src/components/GraphCanvas.jsx",
+      "path": "frontend/src/components/GraphCanvas.jsx",
+      "language": "javascript"
+    },
+    {
+      "id": "frontend/src/components/ApiExplorerPanel.jsx",
+      "path": "frontend/src/components/ApiExplorerPanel.jsx",
+      "language": "javascript"
+    },
+    {
+      "id": "frontend/src/components/SchemaPanel.jsx",
+      "path": "frontend/src/components/SchemaPanel.jsx",
+      "language": "javascript"
+    },
+    {
+      "id": "frontend/src/components/AnalysisPanel.jsx",
+      "path": "frontend/src/components/AnalysisPanel.jsx",
+      "language": "javascript"
+    },
+    {
+      "id": "frontend/src/App.jsx",
+      "path": "frontend/src/App.jsx",
+      "language": "javascript"
+    },
+    {
+      "id": "frontend/src/main.jsx",
+      "path": "frontend/src/main.jsx",
+      "language": "javascript"
+    },
+    {
+      "id": "frontend/vite.config.js",
+      "path": "frontend/vite.config.js",
+      "language": "javascript"
+    }
+  ],
+  "edges": [
+    {
+      "kind": "import",
+      "from": "backend/server.js",
+      "to": "express",
+      "specifier": "express",
+      "resolvedPath": "express",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "backend/server.js",
+      "to": "cors",
+      "specifier": "cors",
+      "resolvedPath": "cors",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "backend/server.js",
+      "to": "fs",
+      "specifier": "fs",
+      "resolvedPath": "fs",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "backend/server.js",
+      "to": "path",
+      "specifier": "path",
+      "resolvedPath": "path",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "backend/server.js",
+      "to": "url",
+      "specifier": "url",
+      "resolvedPath": "url",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "extension/codeParser.js",
+      "to": "path",
+      "specifier": "path",
+      "resolvedPath": "path",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "extension/codeParser.js",
+      "to": "@babel/parser",
+      "specifier": "@babel/parser",
+      "resolvedPath": "@babel/parser",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "extension/extension.js",
+      "to": "vscode",
+      "specifier": "vscode",
+      "resolvedPath": "vscode",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "extension/extension.js",
+      "to": "fs",
+      "specifier": "fs",
+      "resolvedPath": "fs",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "extension/extension.js",
+      "to": "path",
+      "specifier": "path",
+      "resolvedPath": "path",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "extension/extension.js",
+      "to": "http",
+      "specifier": "http",
+      "resolvedPath": "http",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "extension/extension.js",
+      "to": "url",
+      "specifier": "url",
+      "resolvedPath": "url",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "extension/extension.js",
+      "to": "extension/codeParser.js",
+      "specifier": "./codeParser",
+      "resolvedPath": "c:/Users/hanidwivedi/OneDrive/Desktop/Archlens/extension/codeParser.js",
+      "unresolved": false
+    },
+    {
+      "kind": "import",
+      "from": "frontend/src/components/ClassNode.jsx",
+      "to": "react",
+      "specifier": "react",
+      "resolvedPath": "react",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "frontend/src/components/ClassNode.jsx",
+      "to": "reactflow",
+      "specifier": "reactflow",
+      "resolvedPath": "reactflow",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "frontend/src/components/GraphCanvas.jsx",
+      "to": "react",
+      "specifier": "react",
+      "resolvedPath": "react",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "frontend/src/components/GraphCanvas.jsx",
+      "to": "reactflow",
+      "specifier": "reactflow",
+      "resolvedPath": "reactflow",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "frontend/src/components/GraphCanvas.jsx",
+      "to": "dagre",
+      "specifier": "dagre",
+      "resolvedPath": "dagre",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "frontend/src/components/GraphCanvas.jsx",
+      "to": "frontend/src/components/ClassNode.jsx",
+      "specifier": "./ClassNode.jsx",
+      "resolvedPath": "c:/Users/hanidwivedi/OneDrive/Desktop/Archlens/frontend/src/components/ClassNode.jsx",
+      "unresolved": false
+    },
+    {
+      "kind": "import",
+      "from": "frontend/src/components/GraphCanvas.jsx",
+      "to": "../data/graphData.json",
+      "specifier": "../data/graphData.json",
+      "resolvedPath": "../data/graphData.json",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "frontend/src/components/ApiExplorerPanel.jsx",
+      "to": "react",
+      "specifier": "react",
+      "resolvedPath": "react",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "frontend/src/components/ApiExplorerPanel.jsx",
+      "to": "../data/apiData.json",
+      "specifier": "../data/apiData.json",
+      "resolvedPath": "../data/apiData.json",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "frontend/src/components/SchemaPanel.jsx",
+      "to": "react",
+      "specifier": "react",
+      "resolvedPath": "react",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "frontend/src/components/SchemaPanel.jsx",
+      "to": "../data/schemaData.json",
+      "specifier": "../data/schemaData.json",
+      "resolvedPath": "../data/schemaData.json",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "frontend/src/components/AnalysisPanel.jsx",
+      "to": "react",
+      "specifier": "react",
+      "resolvedPath": "react",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "frontend/src/App.jsx",
+      "to": "react",
+      "specifier": "react",
+      "resolvedPath": "react",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "frontend/src/App.jsx",
+      "to": "frontend/src/components/GraphCanvas.jsx",
+      "specifier": "./components/GraphCanvas.jsx",
+      "resolvedPath": "c:/Users/hanidwivedi/OneDrive/Desktop/Archlens/frontend/src/components/GraphCanvas.jsx",
+      "unresolved": false
+    },
+    {
+      "kind": "import",
+      "from": "frontend/src/App.jsx",
+      "to": "frontend/src/components/ApiExplorerPanel.jsx",
+      "specifier": "./components/ApiExplorerPanel.jsx",
+      "resolvedPath": "c:/Users/hanidwivedi/OneDrive/Desktop/Archlens/frontend/src/components/ApiExplorerPanel.jsx",
+      "unresolved": false
+    },
+    {
+      "kind": "import",
+      "from": "frontend/src/App.jsx",
+      "to": "frontend/src/components/SchemaPanel.jsx",
+      "specifier": "./components/SchemaPanel.jsx",
+      "resolvedPath": "c:/Users/hanidwivedi/OneDrive/Desktop/Archlens/frontend/src/components/SchemaPanel.jsx",
+      "unresolved": false
+    },
+    {
+      "kind": "import",
+      "from": "frontend/src/App.jsx",
+      "to": "frontend/src/components/AnalysisPanel.jsx",
+      "specifier": "./components/AnalysisPanel.jsx",
+      "resolvedPath": "c:/Users/hanidwivedi/OneDrive/Desktop/Archlens/frontend/src/components/AnalysisPanel.jsx",
+      "unresolved": false
+    },
+    {
+      "kind": "import",
+      "from": "frontend/src/main.jsx",
+      "to": "react",
+      "specifier": "react",
+      "resolvedPath": "react",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "frontend/src/main.jsx",
+      "to": "react-dom/client",
+      "specifier": "react-dom/client",
+      "resolvedPath": "react-dom/client",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "frontend/src/main.jsx",
+      "to": "reactflow/dist/style.css",
+      "specifier": "reactflow/dist/style.css",
+      "resolvedPath": "reactflow/dist/style.css",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "frontend/src/main.jsx",
+      "to": "./index.css",
+      "specifier": "./index.css",
+      "resolvedPath": "./index.css",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "frontend/src/main.jsx",
+      "to": "frontend/src/App.jsx",
+      "specifier": "./App.jsx",
+      "resolvedPath": "c:/Users/hanidwivedi/OneDrive/Desktop/Archlens/frontend/src/App.jsx",
+      "unresolved": false
+    },
+    {
+      "kind": "import",
+      "from": "frontend/vite.config.js",
+      "to": "vite",
+      "specifier": "vite",
+      "resolvedPath": "vite",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "frontend/vite.config.js",
+      "to": "@vitejs/plugin-react",
+      "specifier": "@vitejs/plugin-react",
+      "resolvedPath": "@vitejs/plugin-react",
+      "unresolved": true
+    }
+  ]
+}

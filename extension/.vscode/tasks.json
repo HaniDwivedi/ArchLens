@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Archlens webview",
+      "type": "shell",
+      "command": "npm --prefix ../frontend run build",
+      "problemMatcher": []
+    }
+  ]
+}
