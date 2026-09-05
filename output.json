@@ -1,0 +1,23 @@
+{
+  "fileScannner.ts": [],
+  "FileSource.ts": [],
+  "index.html": [],
+  "App.tsx": [
+    {
+      "url": "https://example.com",
+      "method": "OBJECT_URL"
+    },
+    {
+      "url": "https://api.example.com/health",
+      "method": "OBJECT_URL"
+    },
+    {
+      "url": "/output.json",
+      "method": "FETCH_API"
+    }
+  ],
+  "GraphVisualizer.tsx": [],
+  "main.tsx": [],
+  "vite.config.ts": [],
+  "extension.ts": []
+}
