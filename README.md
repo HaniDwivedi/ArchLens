@@ -54,7 +54,7 @@ Frontend (React + Vite + React Flow):
 
   ### Manual installation for any user
 
-  1. Share `extension/archlens-0.1.1.vsix` with the user.
+  1. Share `extension/archlens-0.1.6.vsix` with the user.
   2. In VS Code, open Extensions with `Ctrl+Shift+X`.
   3. Open the `...` menu and choose **Install from VSIX...**.
   4. Select the `.vsix` file and reload VS Code.
